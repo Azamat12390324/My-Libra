@@ -1,0 +1,279 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block content %}
+
+
+    <!-- BEGIN NIVO SLIDER -->
+        <div id="slider-flexslider-elegant-0" class="slider slider-flexslider-elegant flexslider-elegant container">
+    	   	<div class="slider-wrapper">
+                <ul class="slides">
+                    <li>
+                    	<img width="1170" height="378" src="{% static 'images/slider/0014.jpg' %}" class="attachment-full" alt="001" />
+                        <div class="slider-caption caption-right">
+                            <div class="caption-wrapper">
+                                <h2>A CLEAN CORPORATE THEME</h2>
+                                <h4></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar turpis velit. Morbi rutrum, neque non pulvinar
+                                    faucibus, ligula eros viverra ligula, et aliquam libero neque ac nisl.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                    	<img width="1170" height="378" src="{% static 'images/slider/0025.jpg'%}" class="attachment-full" alt="002" />
+                        <div class="{% static 'slider-caption caption-right' %}">
+                            <div class="caption-wrapper">
+                                <h2>LOVE IT, ENJOY IT</h2>
+                                <h4></h4>
+
+                                <p>
+                                    Curabitur pharetra accumsan sem, ac accumsan sapien tincidunt a. In hac habitasse platea dictumst.
+                                    Donec lobortis purus ullamcorper risus posuere non euismod mi scelerisque. Nullam tincidunt varius metus sed elementum
+                                </p>
+                                <span class="special-font" style="font-size:24px;">
+                                    Love your
+                                    <span style="font-size: 30px;">Freedom</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    	<img width="1170" height="378" src="{% static 'images/slider/0035.jpg' %}" class="attachment-full" alt="003" />
+                            <div class="{% static 'slider-caption caption-right' %}">
+                            <div class="caption-wrapper">
+                                <h2>MULTIPURPOSE THEME</h2>
+                                <h4></h4>
+                                <p>
+                                    Nam sagittis justo eget nunc hendrerit et semper magna feugiat. Proin eu dui ut elit
+                                    auctor vehicula. Integer ut dui vitae felis venenatis dapibus.
+                                </p>
+                                <p>&nbsp;</p>
+
+                                <span class="special-font" style="font-size:24px;">
+                                    A creative
+                                    <span style="font-size: 30px;">Portfolio theme</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="slider-shadow"></div>
+        </div>
+
+        <script type="{% static 'text/javascript' %}">
+            jQuery(document).ready(function($){
+			    var flex_caption_hide = function(slider) {
+                    var currSlideElement = slider;
+                    var caption_speed = 400;
+                    var width = parseInt( $('.slider-caption', currSlideElement).outerWidth() );
+                    var height = parseInt( $('.slider-caption', currSlideElement).outerHeight() );
+
+                    $('.caption-top', currSlideElement).animate({top:height*-1}, caption_speed);
+                    $('.caption-bottom', currSlideElement).animate({bottom:height*-1}, caption_speed);
+                    $('.caption-left', currSlideElement).animate({left:width*-1}, caption_speed);
+                    $('.caption-right', currSlideElement).animate({right:width*-1}, caption_speed);
+                };
+
+			    var flex_caption_show = function(slider) {
+                    var nextSlideElement = slider;
+                    var caption_speed = 400;
+
+                    $('.caption-top', nextSlideElement).animate({top:0}, caption_speed);
+                    $('.caption-bottom', nextSlideElement).animate({bottom:0}, caption_speed);
+                    $('.caption-left', nextSlideElement).animate({left:0}, caption_speed);
+                    $('.caption-right', nextSlideElement).animate({right:0}, caption_speed);
+                };
+
+			    $('#slider-flexslider-elegant-0 .slider-wrapper').flexslider({
+			        animation: 'fade',
+			        slideshowSpeed: 20000,
+			        animationSpeed: 800,
+			        pauseOnAction: false,
+			        controlNav: false,
+			        directionNav: true,
+			        touch: false,
+                    start   : flex_caption_show,
+                    before  : flex_caption_hide,
+                    after   : flex_caption_show
+			    });
+            });
+        </script>
+    </div>
+    <!-- END HEADER -->
+    <div class="slider-space"></div>
+    <!-- SLOGAN -->
+    <div class="slogan">
+        <h2>NICE TO MEET YOU.</h2>
+        <h3>do you enjoy Libra theme?</h3>
+    </div>
+    <!-- START PRIMARY -->
+    <div id="primary" class="sidebar-right">
+        <div class="container group">
+            <div class="row">
+                <!-- START CONTENT -->
+                <div id="content-home" class="span9 content group">
+                    <div class="page type-page status-publish hentry group">
+                        <div class="two-fourth ">
+                            <h3>Welcome to libra.</h3>
+                            <p>Fusce nec accumsan eros. Aenean ac orci a magna vestibulum posuere quis nec nisi. Maecenas rutrum vehicula condimentum. Donec volutpat nisl ac mauris consectetur gravida.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel vulputate nibh. Pellentesque habitant <strong>morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas.</p>
+                            <p>Aenean ac orci a magna vestibulum posuere quis nec nisi. Maecenas rutrum vehicula condimentum.</p>
+                        </div>
+
+                        <div class="two-fourth last">
+                            <h3>
+                                <span style="color: #a6a258">A nice corporate theme</span>
+                            </h3>
+                            <p>Fusce nec accumsan eros. Aenean ac orci a magna vestibulum posuere quis nec nisi. Maecenas rutrum vehicula condimentum. <a href="#">Donec volutpat nisl</a> ac mauris consectetur gravida.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel vulputate nibh. Pellentesque habitant <strong>morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas.</p>
+                            <p>Aenean ac orci a magna vestibulum posuere quis nec nisi. Maecenas rutrum vehicula condimentum.</p>
+                        </div>
+                    </div>
+
+                    <!-- START COMMENTS -->
+                    <div id="comments"></div>
+                    <!-- END COMMENTS -->
+                </div>
+                <!-- END CONTENT -->
+
+                <!-- START SIDEBAR -->
+                <div id="sidebar-homevi" class="span3 sidebar group">
+                    <div class="widget-first widget featured-projects">
+                        <h3>Featured Projects</h3>
+                        <div class="featured-projects-widget flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <div class="thumb-project">
+                                        <a href='portfolio-details.html'>
+                                            <img width="320" height="154" src="{% static 'images/portfolios/piggie810-320x154.jpg' %}" class="attachment-featured_project_thumb" alt="piggie8" />
+                                        </a>
+                                    </div>
+                                    <h4>Fly Pigg!</h4>
+                                </li>
+
+                                <li>
+                                    <div class="thumb-project">
+                                        <a href='#'>
+                                            <img width="320" height="154" src="{% static 'images/portfolios/01176-320x154.jpg' %}" class="attachment-featured_project_thumb" alt="0117" />
+                                        </a>
+                                    </div>
+                                    <h4>Bob Miller</h4>
+                                </li>
+
+                                <li>
+                                    <div class="thumb-project">
+                                        <a href='#'>
+                                            <img width="320" height="154" src="{% static 'images/portfolios/009-320x154.jpg' %}" class="attachment-featured_project_thumb" alt="009" />
+                                        </a>
+                                    </div>
+                                    <h4>Guanacos</h4>
+                                </li>
+
+                                <li>
+                                    <div class="thumb-project">
+                                        <a href='#'>
+                                            <img width="320" height="154" src="{% static 'images/portfolios/0041-320x154.jpg' %}" class="attachment-featured_project_thumb" alt="004" />
+                                        </a>
+                                    </div>
+                                    <h4> Digitpool Medien</h4>
+                                </li>
+
+                                <li>
+                                    <div class="thumb-project">
+                                        <a href='#'>
+                                            <img width="320" height="154" src="{% static 'images/portfolios/007-320x154.jpg' %}" class="attachment-featured_project_thumb" alt="007" />
+                                        </a>
+                                    </div>
+                                    <h4>Kimeda</h4>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <script type="text/javascript">
+                            jQuery(document).ready(function($){
+                                var animation = $.browser.msie || $.browser.opera ? 'fade' : 'slide';
+                                $('.featured-projects-widget').flexslider({
+                                    animation: animation,
+                                    slideshowSpeed: 8000,
+                                    animationSpeed: 300,
+                                    selectors: 'ul > li',
+                                    directionNav: true,
+                                    slideshow: true,
+
+                                    pauseOnAction: false,
+                                    controlNav: false,
+                                    touch: true
+                                });
+                            });
+                          </script>
+                        </div>
+                    </div>
+                    <!-- END SIDEBAR -->
+
+                    <!-- START EXTRA CONTENT -->
+                    <div class="extra-content margin-top group span12">
+                        <div class="clear space"></div>
+                        <div class="one-fourth ">
+                            <div class="random-numbers">
+                                <img src="{% static 'images/1.png' %}" alt="" width="52" height="52" />
+                                <p>Love our works?</p>
+                                <span class="number">Call us</span>
+                            </div>
+                        </div>
+
+                        <div class="one-fourth ">
+                            <div class="random-numbers">
+                                <img src="{% static 'images/2.png' %}" alt="" width="52" height="52" />
+                                <p>...and ask a</p>
+                                <span class="number">Quote</span>
+                            </div>
+                        </div>
+
+                        <div class="one-fourth ">
+                            <div class="random-numbers">
+                                <img src="{% static 'images/3.png' %}" alt="" width="52" height="52" />
+                                <p>Satisfied customers</p>
+                                <span class="number">287</span>
+                            </div>
+                        </div>
+
+                        <div class="one-fourth last">
+                            <div class="random-numbers">
+                                <img src="{% static 'images/4.png' %}" alt="" width="52" height="52" />
+                                <p>Years of experience</p>
+                                <span class="number">12</span>
+                            </div>
+                        </div>
+
+                        <div class="call-three">
+                         <div class="text">
+                            <h2>Stay updated on the last offers!</h2>
+                             <h4>Aenean non massa dui. Etiam dignissim erat ac du</h4>
+                         </div>
+                         <div class="newsletter-call3  group">
+                            <form method="post" action="">
+                                <div class="{% static 'icons/newsletter-icon' %}">
+                                    <label for="email"></label>
+                                </div>
+
+                                <div class="newsletter-input">
+                                    <input type="text" name="email" id="email" placeholder="Insert your mail address" class="email-field text-field autoclear" />
+                                </div>
+
+                                <div class="newsletter-submit">
+                                    <input type="submit" value="ADD ME TO THE MAILING LIST" class="submit-field" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- END EXTRA CONTENT -->
+            </div>
+        </div>
+    </div>
+    <!-- END PRIMARY -->
+
+{% endblock %}   
