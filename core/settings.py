@@ -33,6 +33,9 @@ CUSTOM_APPS = [
     'home_6',
     'home_7',
     'home_8',
+    'features_1',
+    'features_2',
+    'features_3',
     
     
 ]
@@ -42,7 +45,7 @@ THIRD_PARTY_APPS = [
 "ckeditor_uploader",
 ]
 
-INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS +THIRD_PARTY_APPS
+INSTALLED_APPS = DJANGO_APPS + CUSTOM_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -1,3 +1,13 @@
 from django.contrib import admin
+from home_7.models import Home_7
 
-# Register your models here.
+
+@admin.register(Home_7)
+class Home_7(admin.ModelAdmin):
+    list_display = ('title', 'sub_title', 'icons')
+    list_display_links = ('title', 'sub_title')
+    list_filter = ('title',)
+
+
+
+

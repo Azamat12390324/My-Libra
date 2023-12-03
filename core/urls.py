@@ -15,6 +15,9 @@ urlpatterns = [
     path('', include('home_6.urls')),
     path('', include('home_7.urls')),
     path('',include('home_8.urls')),
+    path('',include('features_1.urls')),
+    path('',include('features_2.urls')),
+    path('',include('features_3.urls')),
     
     
 ]
