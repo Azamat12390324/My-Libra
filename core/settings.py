@@ -36,6 +36,12 @@ CUSTOM_APPS = [
     'features_1',
     'features_2',
     'features_3',
+    'features_4',
+    'portfolio_1',
+    'portfolio_2',
+    'portfolio_3',
+    'columns_2',
+    'columns_3',
     
     
 ]

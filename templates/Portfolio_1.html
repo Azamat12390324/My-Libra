@@ -1,0 +1,162 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block content  %}
+    <!-- SLOGAN -->
+    <div class="slogan">
+        <h2>YOU WILL LOVE OUR DESIGN.</h2>
+        <h3>seriously.</h3>      
+    </div>
+        
+    <!-- START PRIMARY -->
+    <div id="primary" class="sidebar-no">
+    <div class="container group">
+	    <div class="row">
+            <!-- START CONTENT -->
+	        <div id="content-page" class="span12 content group">
+                <div class="page type-page status-publish group">
+            
+                <script>
+                jQuery(document).ready(function($){
+                    $('.sidebar').remove();
+                    
+                    if( !$('#primary').hasClass('sidebar-no') ) {
+                        $('#primary').removeClass().addClass('sidebar-no');
+                        $('.content').removeClass('span9').addClass('span12');
+                    }
+                    
+                });
+                </script>
+
+                <div class="row">
+                    <div class="portfolio-libra span12 margin-bottom">
+                        <div class="row">	
+                            <!-- portfolio image/slider -->
+                            <div class="span5">
+                                <h2 class="work-title"></h2>
+
+                                <div class="work-thumbnail span5">
+                                    <div class="picture_overlay">
+                                        <img width="437" height="261" src="{% static 'images/portfolios/piggie810-437x261.jpg' %}" class="attachment-thumb_medium_portfolio_libra" alt="piggie8">
+
+                                        <div class="overlay">
+                                            <div style="margin-top: -18.5px; margin-left: -18.5px;"><p>
+                                                <a href="i{% static 'images/portfolios/piggie810.jpg' %}" rel="lightbox_libra" class="cboxElement">
+                                                    <img src="{% static 'images/icons/zoom.png' %}" alt="Open Lightbox"></a>
+                                            </p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- portfolio thumbnails -->
+                            <div class="work-projects span3">
+                                <div class="row">
+                                    <h2>Other projects</h2>
+                                    <ul>
+                                        <li class="span1">
+                                            <a href="#">
+                                                <img width="60" height="60" src="{% static 'images/portfolios/piggie810-60x60.jpg' %}" class="attachment-thumb_small_portfolio_libra" alt="piggie8" />					
+                                            </a>
+                                        </li>
+                                    
+                                        <li class="span1">
+                                            <a href="#">
+                                               <img width="60" height="60" src="{% static 'images/portfolios/01176-60x60.jpg' %}" class="attachment-thumb_small_portfolio_libra" alt="0117" />				
+                                            </a>
+                                        </li>
+                                    
+                                        <li class="span1">
+                                            <a href="#">
+                                                <img width="60" height="60" src="{% static 'images/portfolios/009-60x60.jpg' %}" class="attachment-thumb_small_portfolio_libra" alt="009" />		
+                                            </a>
+                                        </li>
+                                    
+                                        <li class="span1">
+                                            <a href="#">
+                                                <img width="60" height="60" src="{% static 'images/portfolios/0041-60x60.jpg' %}" class="attachment-thumb_small_portfolio_libra" alt="004" />			
+                                            </a>
+                                        </li>
+                                    
+                                        <li class="span1">
+                                            <a href="#">
+                                                <img width="60" height="60" src="{% static 'images/portfolios/007-60x60.jpg' %}" class="attachment-thumb_small_portfolio_libra" alt="007" />		
+                                            </a>
+                                        </li>
+                                    
+                                        <li class="span1">
+                                            <a href="#">
+                                                <img width="60" height="60" src="{% static 'images/portfolios/0051-60x60.jpg' %}" class="attachment-thumb_small_portfolio_libra" alt="005" />		
+                                            </a>
+                                        </li>
+                                    
+                                        <li class="span1">
+                                            <a href="#">
+                                                <img width="60" height="60" src="{% static 'images/portfolios/0067-60x60.jpg' %}" class="attachment-thumb_small_portfolio_libra" alt="006" />		
+                                            </a>
+                                        </li>
+                                    
+                                        <li class="span1">
+                                            <a href="#">
+                                                <img width="60" height="60" src="{% static 'images/portfolios/00219-60x60.jpg' %}" class="attachment-thumb_small_portfolio_libra" alt="002" />			
+                                            </a>
+                                        </li>
+                                    
+                                       <li class="span1">
+                                            <a href="#">
+                                               <img width="60" height="60" src="{% static 'images/portfolios/00318-60x60.jpg' %}" class="attachment-thumb_small_portfolio_libra" alt="003" />			
+                                            </a>
+                                       </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- portfolio content -->
+                            <div class="work-content-wrapper span4">
+
+                                <h2>Project description</h2>
+
+                                <div class="work-content">
+                                    <p>Nullam volutpat, mauris scelerisque iaculis semper, justo odio rutrum urna, at cursus urna nisl et ipsum. Donec dapibus lacus nec sapien faucibus eget suscipit lorem mattis.</p>
+                                    <p>Donec non mauris ac nulla consectetur pretium sit amet rhoncus neque. Maecenas aliquet, diam sed rhoncus vestibulum, sem lacus ultrices est, eu hendrerit tortor nulla in dui. Suspendisse enim purus, euismod interdum viverra eget, ultricies eu est.</p>
+                                </div>
+
+                            </div>
+                            <div class="clear"></div>
+                            
+                            <!-- portfolio meta -->
+                            <div class="work-meta span12">
+                                <ul>
+                                    <li class="categories">
+                                        <span><img src="{% static 'images/portfolios/categories.png' %}" alt="categories"></span><strong>Categories: </strong>Logo
+                                        Design, Web Design
+                                    </li>
+                                    <li class="customer">
+                                        <span><img src="{% static 'images/portfolios/customer.png' %}" alt="customer"></span><strong>Customer: </strong>Fly
+                                        Pigg! - <a href="http://www.google.com">google.com</a></li>
+                                    <li class="skills">
+                                        <span><img src="{% static 'images/portfolios/project.png' %}" alt="skills"></span><strong>Project</strong>:
+                                        business card, prints, website
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- START COMMENTS -->
+            <div id="comments"></div>
+            <!-- END COMMENTS -->
+        </div>
+        <!-- END CONTENT -->
+
+        <!-- START EXTRA CONTENT -->
+        <!-- END EXTRA CONTENT -->
+     	 </div>
+      </div>
+   </div>
+    <!-- END PRIMARY -->
+
+{% endblock %}
+    

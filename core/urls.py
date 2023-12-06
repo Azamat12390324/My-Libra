@@ -18,6 +18,12 @@ urlpatterns = [
     path('',include('features_1.urls')),
     path('',include('features_2.urls')),
     path('',include('features_3.urls')),
+    path('',include('features_4.urls')),
+    path('',include('portfolio_1.urls')),
+    path('',include('portfolio_2.urls')),
+    path('',include('portfolio_3.urls')),
+    path('',include('columns_2.urls')),
+    path('',include('columns_3.urls')),
     
     
 ]
