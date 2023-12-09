@@ -1,0 +1,202 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block content %}
+
+
+
+    <!-- SLOGAN -->
+    <div class="slogan">
+        <h2>Portfolio Full Description</h2>
+        <h3>Project detail #2</h3>
+    </div>
+
+    <!-- START PRIMARY -->
+    <div id="primary" class="sidebar-no">
+        <div class="container group">
+            <div class="row">
+                <!-- START CONTENT -->
+                <div id="content-page" class="span12 content group">
+                    <div class="page type-page status-publish group">
+
+                        <script>
+                            jQuery(document).ready(function ($) {
+                                $('.sidebar').remove();
+
+                                if (!$('#primary').hasClass('sidebar-no')) {
+                                    $('#primary').removeClass().addClass('sidebar-no');
+                                    $('.content').removeClass('span9').addClass('span12');
+                                }
+
+                            });
+                        </script>
+
+                        <div id="portfolio" class="portfolio-full-description portfolio-full-big">
+
+                            <!-- START BIG LAYOUT -->
+                            <div class="page type-page status-publish work group row">
+                                <div class="work-thumbnail span12">
+                                    <div class="thumb-wrapper">
+
+                                        <div class="work-thumbnail">
+                                            <div class="picture_overlay">
+                                                <img width="1158" height="400" src="{% static 'images/portfolios/ComputerDesktopWallpapersCollection225_023-1158x400.jpg' %}" class="attachment-thumb_portfolio_fulldesc_big" alt="ComputerDesktopWallpapersCollection225_023"/>
+
+                                                <div class="overlay">
+                                                    <div>
+                                                        <p>
+                                                            <a href="{% static 'images/portfolios/ComputerDesktopWallpapersCollection225_023.jpg' %}" rel="lightbox_fulldesc" class="lightbox_fulldesc">
+                                                                <img src="{% static 'images/icons/zoom.png' %}" alt="Open Lightbox"/>
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            jQuery(document).ready(function ($) {
+                                                jQuery(".work-thumbnail .overlay a.lightbox_fulldesc").colorbox({
+                                                    transition: 'elastic',
+                                                    rel: 'lightbox_fulldesc',
+                                                    fixed: true,
+                                                    maxWidth: '80%',
+                                                    maxHeight: '80%',
+                                                    opacity: 0.7
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="work-description span9">
+                                    <h3>Sound of music</h3>
+
+                                    <p>Nullam volutpat, mauris scelerisque iaculis semper, justo odio rutrum urna,
+                                        at cursus urna nisl et ipsum. Donec dapibus lacus nec sapien faucibus eget
+                                        suscipit lorem mattis. Donec non mauris ac nulla consectetur pretium sit
+                                        amet rhoncus neque. Maecenas aliquet, diam sed rhoncus vestibulum, sem lacus
+                                        ultrices est, eu hendrerit tortor nulla in dui. Suspendisse enim purus,
+                                        euismod interdum viverra eget, ultricies eu est. Maecenas dignissim mauris
+                                        id est semper suscipit. Suspendisse venenatis vestibulum quam, quis
+                                        porttitor arcu vestibulum et. Sed porttitor erosut purus elementum a
+                                        consectetur purus vulputate</p>
+                                </div>
+                                <div class="work-skillsdate span3">
+                                    <h4>Project Details</h4>
+
+                                    <p class="categories paragraph-links">
+                                        <span class="meta-label">Project:</span>
+                                        sound, music</p>
+
+                                    <p class="customer"><span class="meta-label">
+                                        Customer:</span> Colorful
+                                    </p>
+
+                                    <p class="workdate">
+                                        <span class="meta-label">Year:</span> 2001
+                                    </p>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                            <!-- START SMALL LAYOUT -->
+
+                            <div class="clear"></div>
+                            <h3>Other Projects</h3>
+
+                            <div class="portfolio-full-description-related-projects row">
+                                <div class="related_project span3">
+
+                                    <div class="related_img">
+                                        <div class="picture_overlay">
+                                            <img width="258" height="170" src="{% static 'images/portfolios/ComputerDesktopWallpapersCollection225_024-258x170.jpg' %}" class="attachment-thumb_portfolio_fulldesc_related" alt="ComputerDesktopWallpapersCollection225_024"/>
+
+                                            <div class="overlay">
+                                                <div>
+                                                    <p>
+                                                        <a href="{% static 'images/portfolios/ComputerDesktopWallpapersCollection225_024.jpg' %}" rel="lightbox" class="ch-info-lightbox">
+                                                            <img src="{% static 'images/icons/zoom.png' %}" alt="Open Lightbox"/>
+                                                        </a>
+                                                        <a href="portfolio-detail-2.html">
+                                                            <img src="{% static 'images/icons/project.png'%}" alt=""/>
+                                                        </a>
+                                                    </p>
+
+                                                    <p class="title">Green energy</p>
+
+                                                    <p class="subtitle"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="related_project span3">
+
+                                    <div class="related_img">
+                                        <div class="picture_overlay">
+                                            <img width="258" height="170" src="{% static 'images/portfolios/ComputerDesktopWallpapersCollection227_068-258x170.jpg' %}" class="attachment-thumb_portfolio_fulldesc_related" alt="ComputerDesktopWallpapersCollection227_068"/>
+
+                                            <div class="overlay">
+                                                <div>
+                                                    <p>
+                                                        <a href="{% static 'images/portfolios/ComputerDesktopWallpapersCollection227_068.jpg' %}" rel="lightbox" class="ch-info-lightbox">
+                                                            <img src="{% static 'images/icons/zoom.png' %}" alt="Open Lightbox"/>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="{% static 'images/icons/project.png' %}" alt=""/>
+                                                        </a>
+                                                    </p>
+
+                                                    <p class="title">Enjoy the music</p>
+
+                                                    <p class="subtitle"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="related_project span3">
+
+
+                                    <div class="related_img">
+                                        <div class="picture_overlay">
+                                            <img width="258" height="170" src="{% static 'images/portfolios/ComputerDesktopWallpapersCollection228_009-258x170.jpg' %}" class="attachment-thumb_portfolio_fulldesc_related" alt="ComputerDesktopWallpapersCollection228_009"/>
+
+                                            <div class="overlay">
+                                                <div>
+                                                    <p>
+                                                        <a href="{% static 'images/portfolios/ComputerDesktopWallpapersCollection228_009.jpg' %}" rel="lightbox" class="ch-info-lightbox">
+                                                            <img src="{% static 'images/icons/zoom.png' %}" alt="Open Lightbox"/>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="{% static 'images/icons/project.png' %}" alt=""/>
+                                                        </a>
+                                                    </p>
+
+                                                    <p class="title">Firebook</p>
+
+                                                    <p class="subtitle"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- START COMMENTS -->
+                    <div id="comments"></div>
+                    <!-- END COMMENTS -->
+                </div>
+                <!-- END CONTENT -->
+
+                <!-- START EXTRA CONTENT -->
+                <!-- END EXTRA CONTENT -->
+            </div>
+        </div>
+    </div>
+    <!-- END PRIMARY -->
+
+  {% endblock %}  

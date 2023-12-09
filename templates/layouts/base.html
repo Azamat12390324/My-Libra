@@ -44,7 +44,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="{% static 'main/style.css' %}" />
 
     <!-- [favicon] begin -->
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'main/icons/favicon.ico' %}" />
+    <link rel="{% static "shortcut icon"%}" type="image/x-icon" href="{% static 'main/icons/favicon.ico' %}" />
     <link rel="icon" type="image/x-icon" href="{% static 'main/icons/favicon.ico' %}" />
     <!-- [favicon] end -->
 
@@ -67,7 +67,7 @@
     <link rel='stylesheet' id='custom-css'  href="{% static 'main/css/custom.css' %}" type='text/css' media='all' />
     <link type='text/css' media='all' id='google-fonts-css' href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
     <style type="text/css">
-            body { background-color: #ffffff; background-image: url('{% static "images/bg-pattern.png" %}'); background-repeat: repeat; background-position: top left; background-attachment: scroll; }
+            body { background-color: #ffffff; background-image: url("{% static 'images/bg-pattern.png' %}"); background-repeat: repeat; background-position: top left; background-attachment: scroll; }
     </style>
 
     <script type='text/javascript' src="{% static 'js/jquery/jquery.js' %}"></script>
@@ -121,11 +121,9 @@
                                     <li><a href="{% url 'portfolio_3:portfolio_3' %}">Slide Detail</a></li>
                                     <li><a href="{% url 'columns_2:columns_2' %}">2 Columns</a></li>
                                     <li><a href="{% url 'columns_3:columns_3' %}">3 Columns</a></li>
-                                    <li><a href="portfolio-4-columns.html">4 Columns</a></li>
-                                    <li><a href="portfolio-big-image.html">Big Image</a></li>
-                                    <li><a href="portfolio-slider.html">Slider</a></li>
-                                    <li><a href="portfolio-project-detail-1.html">Project Detail #1</a></li>
-                                    <li><a href="portfolio-project-detail-2.html">Project detail #2</a></li>
+                                    <li><a href="{% url 'columns_4:columns_4' %}">4 Columns</a></li>
+                                    <li><a href="{% url 'portfolio_image:portfolio_image' %}">Big Image</a></li>
+                                    <li><a href="{% url 'portfolio_detail_2:portfolio_detail_2' %}">Project detail #2</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -133,18 +131,7 @@
                                 <ul class="sub-menu">
                                     <li>
                                         <a href="testimonials.html">Testimonials</a></li>
-                                    <li>
-                                        <a href="#">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-libra-big.html">Libra Big</a></li>
-                                            <li><a href="blog-libra-small.html">Libra Small</a></li>
-                                            <li><a href="blog-elegant.html">Elegant</a></li>
-                                            <li><a href="blog-big-thumbnails.html">Big Thumbnails</a></li>
-                                            <li><a href="blog-small-thumbnails.html">Small Thumbnails</a></li>
-                                            <li><a href="blog-pinterest.html">Pinterest</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
+                                    
                                         <a href="pages-faq.html">FAQ</a>
                                     </li>
                                     <li>

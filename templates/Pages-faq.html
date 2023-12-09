@@ -1,0 +1,197 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block content %}   
+        <!-- END HEADER -->
+            <!-- START PAGE META -->
+            <div id="page-meta" class="group">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <!-- TITLE -->
+                            <div class="title">
+                                <div class="icontitle">
+                                    <img src="{% static 'images/pages/faq1.png' %}" alt="title"/>
+                                </div>
+                                <div class="title-with-icon">
+                                    <h1>FAQ</h1>
+                                </div>
+                            </div>
+
+                            <!-- BREDCRUMB -->
+                            <div class="breadcrumbs">
+                                <span class="before-text">You are here:</span>
+
+                                <p id="yit-breadcrumb" itemprop="breadcrumb">
+                                    <a class="home" href="index.html">Home Page</a> |
+                                    <a class="no-link current" href="#">FAQ</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END PAGE META -->
+
+            <!-- START PRIMARY -->
+            <div id="primary" class="sidebar-right">
+                <div class="container group">
+                    <div class="row">
+                        <!-- START CONTENT -->
+                        <div id="content-page" class="span9 content group">
+                            <div class="page type-page status-publish group">
+                                <div class="row">
+                                    <ul class="filters faq">
+
+                                        <li>Filter by:</li>
+
+                                        <li>
+                                            <a href="#all" data-option-value="*" class="active">All</a>
+                                        </li>
+
+                                        <li>
+                                            || <a href="#libra-demo" data-option-value=".libra-demo">Libra Demo</a>
+                                        </li>
+
+                                        <li>
+                                            || <a href="#support" data-option-value=".support">Support</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="faqs-container">
+
+                                    <div class="faq-wrapper all libra-demo ">
+                                        <div class="faq-title 9">
+                                            <div class="plus"></div>
+                                            <h4>This is the first question about the Libra Corporate</h4>
+                                        </div>
+                                        <div class="faq-item 9">
+                                            <div class="faq-item-content">
+                                                <p>Aliquam fringilla, mauris ac molestie porttitor, dolor augue congue
+                                                    nisi, et sagittis dolor mauris sit amet lacus.</p>
+
+                                                <p>Curabitur quis urna at orci dignissim egestas non sit amet libero. In
+                                                    a nunc justo, ac tincidunt nisl. Aliquam fringilla, mauris ac
+                                                    molestie porttitor, dolor augue congue nisi, et sagittis dolor
+                                                    mauris sit amet lacus.</p>
+
+                                                <p>Curabitur quis urna at orci dignissim egestas non sit amet libero. In
+                                                    a nunc justo, ac tincidunt nisl.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="faq-wrapper all support ">
+                                        <div class="faq-title 9">
+                                            <div class="plus"></div>
+                                            <h4>Do you provide free support to setup this theme?</h4>
+                                        </div>
+                                        <div class="faq-item 9">
+                                            <div class="faq-item-content">
+                                                <p>Sure. After the purchase you can access to our suppor forum and open
+                                                    a new topic if you need help from our developers. In the forum you
+                                                    can also watch a lot of <strong>videotutorials</strong> and also
+                                                    <strong>download our sample data</strong> to make your site like our
+                                                    demo with just 2 clicks!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="faq-wrapper all libra-demo ">
+                                        <div class="faq-title 9">
+                                            <div class="plus"></div>
+                                            <h4>I really like your demo. Can i import your xml file?</h4>
+                                        </div>
+                                        <div class="faq-item 9">
+                                            <div class="faq-item-content">
+                                                <p>Yes, after the purchase you can access in our support forum and
+                                                    download the sample data of our demo. It&#8217;s an .gz file that
+                                                    you can easily import in the &#8220;Import&#8221; panel of your
+                                                    theme and in 5 minutes you will have the same content and options of
+                                                    our live preview in your wordpress installation. Quick and easy!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="faq-wrapper all libra-demo ">
+                                        <div class="faq-title 9">
+                                            <div class="plus"></div>
+                                            <h4>I like the slider of the home #1 and the shortocodes of the home#7, can
+                                                i mix the pages?</h4>
+                                        </div>
+                                        <div class="faq-item 9">
+                                            <div class="faq-item-content">
+                                                <p>Sure. The home pages of our demo are just an example of what you can
+                                                    do using the sliders and the shortcodes availables in the theme. You
+                                                    can mix the elements and create your custom home page.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="faq-wrapper all support ">
+                                        <div class="faq-title 9">
+                                            <div class="plus"></div>
+                                            <h4>Tried to install the theme but i have a &#8220;style.css missing&#8221;
+                                                issue!</h4>
+                                        </div>
+                                        <div class="faq-item 9">
+                                            <div class="faq-item-content">
+                                                <p>Please, read the documentation. You are installing the wrong file.
+                                                    You have to upload the <em>cheope.zip</em> archive, not the zip you
+                                                    downloaded from themeforest! Be sure you are installing the right
+                                                    file in your wordpress site.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    jQuery(document).ready(function ($) {
+                                        $('#faqs-container').yit_faq();
+                                    });
+                                </script>
+
+                            </div>
+                            <!-- START COMMENTS -->
+                            <div id="comments">
+                            </div>
+                            <!-- END COMMENTS -->
+                        </div>
+                        <!-- END CONTENT -->
+
+                        <!-- START SIDEBAR -->
+                        <div id="sidebar-homeiv" class="span3 sidebar group">
+                            <div class="widget-first widget widget-icon-text group">
+                                <img class="imgicon" src="{% static 'images/emotion_smile.png' %}" alt=""/>
+
+                                <h3>We will make you happy</h3>
+
+                                <p>Duis aute irure dolor in moris.</p>
+
+                            </div>
+                            <div class="widget widget-icon-text group">
+                                <img class="imgicon" src="{% static 'images/phone5.png' %}" alt=""/>
+
+                                <h3>Contact us</h3>
+
+                                <p>Call us + 39 095 3826830</p>
+                            </div>
+                            <div class="widget-last widget widget-icon-text group">
+                                <img class="imgicon" src="{% static 'images/flower.png' %}" alt=""/>
+
+                                <h3>We&#8217;re kind!</h3>
+
+                                <p>..and do you love us?</p>
+
+                            </div>
+                        </div>
+                        <!-- END SIDEBAR -->
+
+                        <!-- START EXTRA CONTENT -->
+                        <!-- END EXTRA CONTENT -->
+                    </div>
+                </div>
+            </div>
+            <!-- END PRIMARY -->
+
+{% endblock %}           

@@ -42,6 +42,11 @@ CUSTOM_APPS = [
     'portfolio_3',
     'columns_2',
     'columns_3',
+    'columns_4',
+    'portfolio_image',
+    'portfolio_detail_2',
+    'pages',
+    
     
     
 ]
