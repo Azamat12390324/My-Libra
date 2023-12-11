@@ -28,6 +28,8 @@ urlpatterns = [
     path('',include('portfolio_image.urls')),
     path('',include('portfolio_detail_2.urls')),
     path('',include('pages.urls')),
+    path('',include('shortcodes.urls')),
+    path('',include('contact.urls')),
     
     
    

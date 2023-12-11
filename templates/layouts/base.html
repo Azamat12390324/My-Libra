@@ -130,33 +130,21 @@
                                 <a href="#">PAGES</a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="testimonials.html">Testimonials</a></li>
+                                        <a href="{% url 'pages:testimonials' %}">Testimonials</a></li>
                                     
-                                        <a href="pages-faq.html">FAQ</a>
+                                        <a href="{% url 'pages:faq' %}">FAQ</a>
                                     </li>
+                                    
                                     <li>
-                                        <a href="#">About</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="accordion-style.html">Accordion Style</a></li>
-                                            <li><a href="circle-style.html">Circle Style</a></li>
-                                            <li><a href="u-square-style.html">U-square style</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="error-404.html">Error 404</a>
+                                        <a href="{% url 'pages:error_404' %}">Error 404</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#">SHORTCODES</a>
                                 <ul class="sub-menu">
-                                    <li><a href="shortcodes-alert-box-buttons.html">Alert box &amp; Buttons</a></li>
-                                    <li><a href="shortcodes-charts.html">Charts</a></li>
-                                    <li><a href="shortcodes-icon-section.html">Icon section</a></li>
-                                    <li><a href="shortcodes-media-widgets.html">Media &amp; Widgets</a></li>
-                                    <li><a href="shortcodes-mix-various.html">Mix &amp; Various</a></li>
-                                    <li><a href="shortcodes-table-box-prices.html">Table &amp; Box prices</a></li>
-                                    <li><a href="shortcodes-typography.html">Typography</a></li>
+                                    <li><a href="{% url 'shortcodes:alert_box' %}">Alert box &amp; Buttons</a></li>
+                                    <li><a href="{% url 'shortcodes:typography' %}">Typography</a></li>
                                 </ul>
                             </li>
                             <li>

@@ -46,6 +46,8 @@ CUSTOM_APPS = [
     'portfolio_image',
     'portfolio_detail_2',
     'pages',
+    'shortcodes',
+    'contact',
     
     
     

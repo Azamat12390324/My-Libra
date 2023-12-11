@@ -14,10 +14,8 @@ class Testimonials(models.Model):
     name = models.CharField(max_length=255, blank=True)
     icons = models.ImageField(upload_to='testimonials/icons/', blank=True)
     
-    
     def __str__(self) -> str:
         return self.title
-
 
     class Meta:
         verbose_name = 'Testimonial'
